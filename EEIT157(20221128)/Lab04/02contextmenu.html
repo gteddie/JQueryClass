@@ -19,11 +19,19 @@
     </div>
 
     <script src="../js/jquery-3.6.1.min.js"></script>
-    <script>       
+    <script>
+        $("#idlink").click(function(e){
+            e.preventDefault();
+        })       
         //在文件的contextmenu事件，取消預設的動作(preventDefault)
         $(document).contextmenu(function(event){
-            
-        });                            
+            event.preventDefault();
+        });
+        $(document).keydown(function(event){
+            if(event.ctrlKey && event.which==67) { //ctrl+c
+                event.preventDefault();
+            }
+        })                            
     </script>
 </body>
 </html>
