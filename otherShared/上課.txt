@@ -1,0 +1,73 @@
+object.innerHTM="";
+for(){
+object.remove();
+}
+<h1 style="color:red"
+
+$(document)
+$(window)
+$(this)
+
+<input type="button">
+<button  >
+
+1. <input type="radio">
+2. <input type="checkbox">
+3. <select>
+<option selected='selected'>
+
+<p>xxx</p>
+<input> 
+<img>
+
+<td>優先權高於<tr>
+
+object.addEventListener()
+object.removeEventListener()
+
+object.event=f
+object.event=""  //remove
+
+hover=mouseenter+mouseleave
+
+1. copy 路徑 bin 
+C:\Servlet\apache-tomcat-9.0.70\bin
+
+2. cmd DOS mode
+cd\ 根目錄
+cd C:\Servlet\apache-tomcat-9.0.70\bin
+
+3. startup
+找java jdk
+設定JAVA_HOME
+set JAVA_HOME=C:\_java\jdk11
+
+4. startup
+
+5. get.jsp 放 C:\Servlet\apache-tomcat-9.0.70\webapps\ROOT
+
+
+set JAVA_HOME=C:\_java\jdk11
+startup
+
+copy get.jap to C:\Servlet\apache-tomcat-9.0.70\webapps\ROOT
+
+動態 指程式執行過程中改變(繫結)
+
+<p>content</p>
+text()
+html()
+<p><div>content</div></p>
+//JavaScript
+createElement("div")
+createTextNode("contnet")
+//jQuery
+append("<div>content</div>")
+
+委派 delegate
+
+成對標籤
+<p>xxx</p>
+
+<input type="text" or type="password" value=
+

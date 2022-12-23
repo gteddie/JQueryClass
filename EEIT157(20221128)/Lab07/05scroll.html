@@ -31,8 +31,25 @@
 
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script>
+        let pageHeight = $("body").height();
+        let windowHeight = $(window).height();
+        $(window).scroll(
+            function() {
+                let scrollTop = $(this).scrollTop();
+                let scrollPercent = Math.round((scrollTop/(pageHeight - windowHeight)) * 100) + "%";
+                $("#read_progress_bar").width(scrollPercent);
+            }
 
-
+        )
+        // let pageWidth = $("body").width();
+        // let viewWidth = $(window).width();
+        // $(window.scroll) (
+        //     function() {
+        //         let scrollLeft = $(this).scrollLeft();
+        //         let scrollPercent = Math.round(scrollLeft/(pageWidth - viewWidth)* 100) + "%"
+        //         $("#read_progress_bar").width(scrollPercent);
+        //     }
+        // )
     </script>
  </body>
 </html>

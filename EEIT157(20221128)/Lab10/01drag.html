@@ -51,6 +51,9 @@
                 drag: function () {
                     var dragPos=$(this).css("left");
                    $(".cover").css("width", dragPos);
+                },
+                stop : function () {
+                    $(this).draggable("disabled");
                 }
             });
         </script>

@@ -36,9 +36,11 @@
         
     </div>
     <script src="../js/jquery-3.6.1.min.js"></script>
-    <script>            
+    <script>   
+        $(".btn").eq(1).addClass("active");         
         $(".btn").click(function(){
-                        
+            let size = $(this).toggleClass("active").siblings().removeClass("active").end().data("size");
+            $("h2,p").attr("class",size);                
         });
     </script>
 </body>

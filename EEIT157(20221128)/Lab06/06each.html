@@ -19,7 +19,8 @@
     <script>
         $("#btn1").click(function(){                             
             $("li").each(function(index,element){
-                                                            
+                // $("#demo").append(`<li>${$(this).text()}</li>`);                               
+                $("#demo").append(`<li>${$(element).text()}</li>`);                               
             });                  
         });
     </script>

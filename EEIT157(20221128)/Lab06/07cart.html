@@ -60,8 +60,16 @@
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script>
         $(".number").on("change keyup", function(){
-            
-            
+            let PTr = $(this).closest("tr");
+            let price = PTr.find(".price").text();
+            let qty = $(this).val();
+            let s_price = price * qty;
+            PTr.find(".s_price").text(s_price); 
+            let sum = 0;
+            $(".s_price").each(function() {
+                sum += Number($(this).text());
+            })            
+            $("#total").text(sum);
         });
     </script>
 </body>

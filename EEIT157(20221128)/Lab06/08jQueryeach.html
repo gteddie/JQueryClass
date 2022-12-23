@@ -21,6 +21,15 @@
                       {"name":"Jack","workYears":5,"salary":40000},
                       {"name":"Mary","workYears":7,"salary":45000}
                    ]};
+        $.each(data, function(index, attr) {
+            $.each(attr, function (index,value){
+                let name = value.name;
+                let salary = value.salary;
+                let workYears = value.workYears;
+
+                $("#msg").append(`<li>${name},${salary},${workYears}</li>`);
+            })
+        })
     
    </script> 
 </body>
